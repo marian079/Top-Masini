@@ -1,15 +1,15 @@
 body{
     
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100%;
     background-image:url('./resurse/wallpaper.jpg');
     height: 100%; 
-  
+    justify-content: center;
     background-position: center;
     background-size: cover;
+    width: auto;
     
     
 }
@@ -22,9 +22,9 @@ html{
     flex-direction: row;
    background-color: rgba(255, 250, 250, 0.665);
     align-items: center;
-    margin-left:0.7cm;
-    margin-right: 0.7cm;
-    margin-top: 0.5cm;
+    justify-content: center;
+   margin:0.5cm;
+   padding-top:0.5cm;
     
 }
 .citat{
@@ -39,8 +39,8 @@ html{
     display: flex;
     flex-direction: column;
     margin-left: 1cm;
-    background-color: rgba(236, 67, 11, 0.745);
-    padding-left: 0.1cm;
+    background-color: #FD5901;
+    
     
 }
 .centru{
@@ -48,9 +48,8 @@ html{
     
     align-self: center;
     flex-direction:column;
-    margin-left:1cm;
     margin-top: 1cm; 
-    justify-content: center;
+    align-items: center;
     
 }
 
@@ -63,11 +62,9 @@ i{
 ul{
     list-style-type: none;
     display: flex;
-    gap: 1.5em;
     font-size: 18px;
     flex-direction: column;
-    padding: 0cm;
-    margin-top: 0.8cm;
+    
     
    
 }
@@ -76,62 +73,87 @@ a{
     color: black;
     font-size: 0.6cm;
 }
-    img{
-        height: 5cm;
+    .poza img{
+        height: 7cm;
         width: auto;
         
     }
-    .scris{
-        font-family: 'Crimson Text', serif;
-        font-size: 0.7cm;
-        display: flex;
-        margin: 0;
-        
-    }
+    .buton {
+        background-color: inherit;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+      }
     .poza{
+        background-color: antiquewhite;
+        padding: 0.1cm;
+    }
+    .scris{
+        font-family: 'Teko', sans-serif;
+        font-size: 0.9cm;
         display: flex;
+       
         
     }
-    #slideshow {
-        text-align: center;
+    .citat{
+        padding: 1cm;
+    }
+    .footer{
+        display: flex;
+        font-size: 18px;
+        background-color: #249EA0;
+        justify-content: center;
+    }
+    .container{
+        width: 85vmin;
+
+
+        top: 50%;
+        left: 50%;
         overflow: hidden;
-        height: 8cm;
-        width: 18cm;
-        margin: 0;
-        margin-top: 1cm;
-        margin-bottom: 1cm;
-        margin-left: 1cm;
-        margin-right: 1cm;
-        
-      }
+        border: 10px solid #249EA0;
+        border-radius: 8px;
+        box-shadow: 10px 25px 30px rgba(24, 24, 30, 0.3);
+        display: flex;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        animation: slide 18s infinite;
+    }
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-100%);
+        }
+        55%{
+            transform: translateX(-200%);
+        }
+        75%{
+            transform: translateX(-200%);
+        }
+        80%{
+            transform: translateX(-300%);
+        }
+        100%{
+            transform: translateX(-300%);
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
       
-      .slide-wrapper {
-        width: 2912px;
-        -webkit-animation: slide 18s ease infinite;
-        
-      }
       
-      .slide {
-        float:right;
-        height: 8cm;
-        width: 19cm;
-      }
-      
-      
-      
-      img.slide-photo {
-        color: #000;
-        text-align: center;
-       height: 8cm;
-       width: auto;
-      }
-      @-webkit-keyframes slide {
-        20% {margin-left: 0px;}
-        30% {margin-left: -728px;}
-        50% {margin-left: -728px;}
-        60% {margin-left: -1456px;}
-        70% {margin-left: -1456px;}
-        80% {margin-left: -2184px;}
-        90% {margin-left: -2184px;}
-      }
-    
