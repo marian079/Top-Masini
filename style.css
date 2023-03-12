@@ -10,8 +10,9 @@ body{
 }
 h1{
     
-    color:#383838;
+    color: #400E32;
     font-size: 35px;
+    
 }
 .container{
     width: 85vmin;
@@ -81,4 +82,16 @@ img{
 table {
     width: 100%;
     border: 1px solid;
+    font-size: 20px;
+    background-color: #f2921d;
   }
+.informatii{
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.689);
+    flex-direction: column;
+    margin: 0.5cm;
+    padding: 0.2cm;
+}
+tr, td{
+    border: 1px solid;;
+}
